@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <title>Автосервис онлайн брондау</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🚗 Автосервиске онлайн брондау</h1>
+
+<form id="bookingForm">
+    <label>Аты-жөніңіз:</label>
+    <input type="text" id="name" required>
+
+    <label>Қызмет түрі:</label>
+    <select id="service">
+        <option value="5000">Май ауыстыру – 5 000 тг</option>
+        <option value="7000">Диагностика – 7 000 тг</option>
+        <option value="6000">Дөңгелек ауыстыру – 6 000 тг</option>
+        <option value="8000">Тежегіш жүйесін тексеру – 8 000 тг</option>
+    </select>
+
+    <label>Күні:</label>
+    <input type="date" id="date" required>
+
+    <p><strong>Жалпы сома:</strong> <span id="price">5000</span> тг</p>
+
+    <button type="submit">Брондау</button>
+</form>
+
+<h2>📋 Брондаулар тізімі</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Аты-жөні</th>
+            <th>Қызмет</th>
+            <th>Күні</th>
+            <th>Бағасы (тг)</th>
+        </tr>
+    </thead>
+    <tbody id="bookingList"></tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
